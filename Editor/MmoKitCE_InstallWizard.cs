@@ -5,12 +5,12 @@ namespace MmoKitCE
 {
     public class MmoKitCE_InstallWizard : EditorWindow
     {
-        private const string PREF_KEY_SHOWN = "MmoKitCE_WizardShown_v1";
+        private const string PREF_KEY_SHOWN = "MmoKitCE_WizardShown_v1.0";
 
         private Texture2D iconTexture;
         private int currentStep = 1; // 1 = Dependencies (done), 2 = Settings, 3 = Done/Manual
 
-        private const string SETTINGS_PACKAGE_PATH = "Packages/com.mmokitce.dependency-installer/MmoKitCE_Settings.unitypackage";
+        private const string SETTINGS_PACKAGE_PATH = "Packages/com.mmokitce.installer/MmoKitCE_Settings.unitypackage";
 
         [InitializeOnLoadMethod]
         private static void InitOnLoad()
@@ -29,8 +29,8 @@ namespace MmoKitCE
         public static void ShowWizard()
         {
             var window = GetWindow<MmoKitCE_InstallWizard>(true, "MmoKitCE Setup Wizard");
-            window.minSize = new Vector2(480, 320);
-            window.maxSize = new Vector2(480, 320);
+            window.minSize = new Vector2(600, 480);
+            window.maxSize = new Vector2(600, 480);
             window.Show();
         }
 
