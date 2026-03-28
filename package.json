@@ -4,7 +4,7 @@
   "displayName": "MmoKitCE Installer",
   "description": "Installs required Unity packages for MmoKitCE.",
   "unity": "6000.0",
-  "author": "MMORPG Kit community",
+  "author": "MMO Kit Community Edition",
   "documentationUrl": "https://github.com/denariigames/MmoKitCE",
   "changelogUrl": "https://github.com/denariigames/MmoKitCE/releases",
   "licensesUrl": "https://github.com/denariigames/MmoKitCE/blob/master/Core/LICENSE",
