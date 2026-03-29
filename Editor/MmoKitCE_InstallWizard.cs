@@ -16,12 +16,12 @@ namespace MmoKitCE
         private static void InitOnLoad()
         {
             // Show only once per session/project open
-            if (!SessionState.GetBool(PREF_KEY_SHOWN, false))
+            if (!EditorPrefs.GetBool(PREF_KEY_SHOWN, false))
             {
                 EditorApplication.delayCall += () =>
                 {
                     ShowWizard();
-                    SessionState.SetBool(PREF_KEY_SHOWN, true);
+                    EditorPrefs.SetBool(PREF_KEY_SHOWN, true);
                 };
             }
         }
@@ -187,7 +187,7 @@ namespace MmoKitCE
         [MenuItem("MMORPG KIT/MmoKitCE/Show Setup Wizard", false, 10201)]
         private static void ManualOpen()
         {
-            SessionState.SetBool(PREF_KEY_SHOWN, false);
+            EditorPrefs.SetBool(PREF_KEY_SHOWN, false);
             ShowWizard();
         }
     }
