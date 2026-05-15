@@ -131,7 +131,7 @@ namespace MmoKitCE
                     EditorGUILayout.LabelField("Setup almost complete!\n\n" +
                                             "Clone the MmoKitCE repository into your Assets folder. This will enable you to keep your project up-to-date with a simple git pull. After importing, check the MMORPG Kit > MmoKitCE menu to enable optional addons.", EditorStyles.wordWrappedLabel);
                     EditorGUILayout.Space(8);
-                    EditorGUILayout.LabelField("git clone https://github.com/MMORPG-Kit/MmoKitCE.git", EditorStyles.boldLabel);
+                    EditorGUILayout.LabelField("git clone https://github.com/denariigames/MmoKitCE.git", EditorStyles.boldLabel);
                     break;
             }
 
