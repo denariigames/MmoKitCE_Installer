@@ -184,7 +184,7 @@ namespace MmoKitCE
         }
 
         // Optional: Menu item to reopen wizard manually
-        [MenuItem("MMORPG KIT/MmoKitCE/Show Setup Wizard", false, 10201)]
+        [MenuItem("MmoKitCE/Install/Show Setup Wizard", false, 10201)]
         private static void ManualOpen()
         {
             EditorPrefs.SetBool(PREF_KEY_SHOWN, false);
